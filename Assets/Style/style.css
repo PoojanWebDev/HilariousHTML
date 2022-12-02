@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -28,28 +32,6 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 767px) {
-  .mobile-nav-wrapper {
-    display: none;
-  }
-  .dekstop-nav-wrapper {
-    display: block;
-    background-color: #414141;
-    height: 48px;
-    display: flex;
-    justify-content: center;
-    padding: 0 12px;
-  }
-  .dekstop-nav-wrapper ul {
-    width: 70%;
-    color: white;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
 .homescreen nav img {
   width: 16px;
 }
@@ -72,7 +54,7 @@ body {
 
 .banner .iphone14_wrapper h3 {
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 400;
   margin: 10px 0 20px;
 }
 
@@ -84,6 +66,7 @@ body {
   column-gap: 20px;
   align-items: center;
   color: #0066cc;
+  justify-content: center;
 }
 
 .learn_more:hover,
@@ -93,4 +76,100 @@ body {
 
 .iphone14_links img {
   width: 20px;
+}
+
+.iphone_image_wrapper img {
+  margin: 30px 0;
+  width: 100%;
+}
+
+.iphone14pro-section {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 10px;
+}
+
+.iphone14pro-wrapper {
+  background-color: #000000;
+}
+
+.iphone14pro-wrapper h2 {
+  padding: 40px 0 20px;
+  font-size: 56px;
+  color: white;
+}
+
+.iphone14pro-wrapper h3 {
+  font-size: 28px;
+  font-weight: 400;
+  color: white;
+  padding: 0 0 30px;
+}
+
+.iphone14pro-wrapper .iphone14_links img {
+  color: white;
+}
+
+.iphone14pro-hero {
+  width: 50%;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.iphone14pro-hero img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 30px 0;
+  width: 75%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.quick-links-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  justify-content: space-between;
+}
+
+footer li {
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.copyright {
+  padding: 10px 0 0;
+  border-top: 0.5px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 767px) {
+  .mobile-nav-wrapper {
+    display: none;
+  }
+  .dekstop-nav-wrapper {
+    display: block;
+    background-color: #414141;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    padding: 0 12px;
+  }
+  .dekstop-nav-wrapper ul {
+    width: 70%;
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer li {
+    text-align: center;
+  }
 }
