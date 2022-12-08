@@ -3,11 +3,16 @@
   padding: 0;
 }
 
+nav ul li :hover {
+  cursor: pointer;
+}
+
 ul {
   list-style: none;
 }
 
 body {
+  position: relative;
   margin: 0;
   padding: 0;
   max-width: 1920px;
@@ -32,13 +37,13 @@ body {
   display: none;
 }
 
-.homescreen nav img {
+.header nav img {
   width: 16px;
 }
 
 .banner {
   width: 100%;
-  margin: 0 auto;
+  margin: 48px auto 0;
   text-align: center;
 }
 
@@ -48,8 +53,8 @@ body {
 }
 
 .banner .iphone14_wrapper h1 {
-  font-size: 56px;
-  margin: 40px 0 0;
+  font-size: 42px;
+  margin: 20px 0 0;
 }
 
 .banner .iphone14_wrapper h3 {
@@ -61,9 +66,10 @@ body {
 .iphone14_links,
 .learn_more,
 .buy {
-  font-size: 21px;
+  font-size: 16px;
   display: flex;
-  column-gap: 20px;
+  column-gap: 10px;
+  margin: 5px 0;
   align-items: center;
   color: #0066cc;
   justify-content: center;
@@ -94,8 +100,8 @@ body {
 }
 
 .iphone14pro-wrapper h2 {
-  padding: 40px 0 20px;
-  font-size: 56px;
+  padding: 30px 0 15px;
+  font-size: 32px;
   color: white;
 }
 
@@ -133,11 +139,12 @@ footer {
 .quick-links-wrapper {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 20px;
+  gap: 20px;
   justify-content: space-between;
 }
 
 footer li {
+  text-align: center;
   font-size: 12px;
   margin: 10px 0;
 }
@@ -149,11 +156,51 @@ footer li {
   justify-content: space-between;
 }
 
+.watch-container {
+  display: flex;
+  column-gap: 10px;
+  margin: 0 10px;
+}
+
+.watch-1-wrapper {
+  width: 50%;
+  padding: 3% 0 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  color: white;
+}
+
+.watch-1-wrapper h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.watch-1-wrapper p {
+  text-align: center;
+}
+
+.watch-1-wrapper span {
+  text-align: center;
+}
+
+.smart-watch-1-image {
+  width: 100%;
+  object-fit: contain;
+}
+
+.smart-watch-1-image img {
+  width: 100%;
+}
+
 @media screen and (min-width: 767px) {
   .mobile-nav-wrapper {
     display: none;
   }
   .dekstop-nav-wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: block;
     background-color: #414141;
     height: 48px;
@@ -162,14 +209,64 @@ footer li {
     padding: 0 12px;
   }
   .dekstop-nav-wrapper ul {
-    width: 70%;
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
     color: white;
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  footer li {
+
+  .iphone14_links {
+    margin: 20px 0;
+  }
+
+  .iphone14pro-wrapper h2 {
+    padding: 40px 0 20px;
+    font-size: 32px;
+    color: white;
+  }
+
+  .iphone14pro-wrapper h3 {
+    font-size: 28px;
+    font-weight: 400;
+    color: white;
+    padding: 0 0 30px;
+  }
+
+  .banner .iphone14_wrapper h1 {
+    font-size: 56px;
+    margin: 40px 0 0;
+  }
+
+  .banner .iphone14_wrapper h3 {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 10px 0 20px;
+  }
+
+  .watch-1-wrapper {
+    padding: 50px 0 0;
+  }
+
+  .watch-1-wrapper h2 {
+    font-size: 36px;
+  }
+
+  .watch-1-wrapper p {
+    font-size: 18px;
     text-align: center;
+  }
+
+  .watch-1-wrapper span {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  footer li {
+    text-align: left;
   }
 }
