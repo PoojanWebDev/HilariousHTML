@@ -7,6 +7,16 @@ nav ul li :hover {
   cursor: pointer;
 }
 
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-style: normal;
+}
+
+ul li a:visited {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
 }
